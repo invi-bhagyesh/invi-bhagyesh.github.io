@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 body {
@@ -12,7 +12,6 @@ body {
     line-height: 1.6;
     font-size: 16px;
     padding: 20px;
-    transition: background-color 0.3s, color 0.3s;
 }
 
 header {
@@ -31,35 +30,12 @@ header p {
     color: #aaa;
 }
 
-.theme-toggle {
-    background-color: #444;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
-    margin-top: 20px;
-    transition: background-color 0.3s;
-}
-
-.theme-toggle:hover {
-    background-color: #666;
-}
-
 /* About Section */
 .about {
     background-color: #1f1f1f;
     padding: 20px;
     border-radius: 8px;
     margin-bottom: 40px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transform: translateY(0);
-    transition: transform 0.3s ease;
-}
-
-.about:hover {
-    transform: translateY(-10px);
 }
 
 .about h2 {
@@ -73,52 +49,25 @@ header p {
 }
 
 /* Projects Section */
-.projects {
-    text-align: center;
+.projects ul {
+    list-style: none;
+    padding: 0;
 }
 
-.projects h2 {
-    font-size: 2.5em;
-    color: #f1f1f1;
-    margin-bottom: 20px;
-}
-
-.project-cards {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.project-card {
+.projects li {
     background-color: #2a2a2a;
-    padding: 20px;
+    margin: 10px 0;
+    padding: 15px;
     border-radius: 8px;
-    width: 250px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.project-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-}
-
-.project-card h3 {
-    color: #7edb82;
-}
-
-.project-card p {
-    color: #ddd;
-}
-
-.project-card a {
-    color: #7edb82;
+.projects a {
     text-decoration: none;
+    color: #7edb82;
     font-weight: bold;
 }
 
-.project-card a:hover {
+.projects a:hover {
     text-decoration: underline;
 }
 
@@ -127,34 +76,4 @@ footer {
     text-align: center;
     margin-top: 40px;
     color: #aaa;
-}
-
-/* Dark Theme */
-body {
-    background-color: #121212;
-    color: #eaeaea;
-}
-
-header, footer {
-    background-color: #1f1f1f;
-}
-
-/* Light Theme */
-body.light-mode {
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-body.light-mode header, 
-body.light-mode footer {
-    background-color: #fff;
-}
-
-body.light-mode .theme-toggle {
-    background-color: #ddd;
-    color: #333;
-}
-
-body.light-mode .theme-toggle:hover {
-    background-color: #ccc;
 }
